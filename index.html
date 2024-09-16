@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+
+        <!-- Form Section -->
+        <form id="resumeForm">
+            <!-- Personal Information -->
+            <div id="personal-info-section"></div>
+
+            <!-- Education -->
+            <div id="education-section"></div>
+
+            <!-- Skills -->
+            <div id="skills-section"></div>
+
+            <!-- Work Experience -->
+            <div id="work-experience-section"></div>
+
+            <button type="submit" class="submit-btn">Generate Resume</button>
+        </form>
+        <!-- After Resume Generation -->
+        <div id="resumePreview">
+            <h2>Generated Resume</h2>
+            <div id="resumeContent"></div>
+            <button id="editBtn" class="edit-btn">Edit Resume</button>
+            <button id="saveChangesBtn" class="save-btn" style="display: none;">Save Changes</button>
+            <button id="downloadPdfBtn" class="pdf-btn">Download as PDF</button>
+            <button id="shareLinkBtn" class="share-btn">Share Link</button>
+            <p id="shareableLink"></p>
+        </div>
+    </div>
+
+    <script src="scripts/personalInfo.js"></script>
+    <script src="scripts/education.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="scripts/workExperience.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
